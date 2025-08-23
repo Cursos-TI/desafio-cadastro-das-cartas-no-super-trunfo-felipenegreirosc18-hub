@@ -7,8 +7,12 @@
 //Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
         printf("Desafio Super Trunfo!\n");
+    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
+    char Estado;
+    char CódigoDaCarta[50], NomeDaCidade[50];
+    int População, NúmeroDePontosTurísticos;
+    float Área, PIB;
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
     // Cadastro das Cartas:
