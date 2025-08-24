@@ -5,14 +5,22 @@
 
 int main() {
         printf("Desafio Super Trunfo!\n");
+
     // Declaração das variáveis da Carta 1
     char Estado1[2];
     char CodigoDaCarta1[4], NomeDaCidade1[50];
     int Populacao1, NumeroDePontosTuristicos1;
     float Area1, PIB1;
+ 
+    // Declaração das variáveis da Carta 2
+    char Estado2[2];
+    char CodigoDaCarta2[4], NomeDaCidade2[50];
+    int Populacao2, NumeroDePontosTuristicos2;
+    float Area2, PIB2;
+
 
     // Entrada de dados da Carta 1
-        printf("Cadastro da Carta1:\n");
+        printf("\nCadastro da Carta1:\n");
         printf("Digite a letra do Estado (letra de A a H):\n");
         scanf ("%1s", Estado1);
 
@@ -34,8 +42,31 @@ int main() {
         printf("Digite o Número De Pontos Turísticos: \n");
         scanf("%d", &NumeroDePontosTuristicos1);
 
+        // Entrada de dados da Carta 2
+        printf("\nCadastro da Carta2:\n");
+        printf("Digite a letra do Estado (letra de A a H):\n");
+        scanf ("%1s", Estado2);
+
+        printf("Digite o Código Da Carta (ex: A01): \n");
+        scanf("%3s", CodigoDaCarta2);
+
+        printf("Digite o Nome Da Cidade: \n");
+        scanf("%50s", NomeDaCidade2);
+
+        printf("Digite o tamanho da População: \n");
+        scanf("%d", &Populacao2);
+
+        printf("Digite a Área (em km²): \n");
+        scanf("%f",  &Area2);
+
+        printf("Digite o PIB: \n");
+        scanf("%f", &PIB2);
+
+        printf("Digite o Número De Pontos Turísticos: \n");
+        scanf("%d", &NumeroDePontosTuristicos2);
+
     // Exibição dos dados da Carta1
-        printf("--- Carta1 ---\n");     
+        printf("\n--- Carta1 ---\n");     
         printf("Estado: %s\n", Estado1);
         printf("Código: %s\n", CodigoDaCarta1);
         printf("Nome Da Cidade: %s\n", NomeDaCidade1);
@@ -44,5 +75,16 @@ int main() {
         printf("PIB: %.3f\n", PIB1);
         printf("Número de Pontos Turísticos: %d\n", NumeroDePontosTuristicos1);
 
+        // Exibição dos dados da Carta2
+        printf("\n---Carta2---\n");
+        printf("Estado: %s\n", Estado2);
+        printf("Código: %s\n", CodigoDaCarta2);
+        printf("Nome Da Cidade: %s\n", NomeDaCidade2);
+        printf("População: %d\n", Populacao2);
+        printf("Área: %.3f\n", Area2);
+        printf("PIB: %.3f\n", PIB2);
+        printf("Número de POntos Turísticos: %d\n", NumeroDePontosTuristicos2);
+
+        
     return 0;
 }
