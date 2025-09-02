@@ -71,9 +71,11 @@ int main() {
         printf("Código: %s\n", CodigoDaCarta1);
         printf("Nome Da Cidade: %s\n", NomeDaCidade1);
         printf("População: %d\n", Populacao1);
-        printf("Área: %.3f\n", Area1);
-        printf("PIB: %.3f\n", PIB1);
+        printf("Área: %.2f km²\n", Area1);
+        printf("PIB: %.2f bilhões de reais\n", PIB1);
         printf("Número de Pontos Turísticos: %d\n", NumeroDePontosTuristicos1);
+        float DensidadePopulacional1 = Populacao1 / Area1;
+        printf("Densidade Populacional: %.2f hab/km²\n", DensidadePopulacional1);
 
         // Exibição dos dados da Carta2
         printf("\n---Carta2---\n");
@@ -81,10 +83,12 @@ int main() {
         printf("Código: %s\n", CodigoDaCarta2);
         printf("Nome Da Cidade: %s\n", NomeDaCidade2);
         printf("População: %d\n", Populacao2);
-        printf("Área: %.3f\n", Area2);
-        printf("PIB: %.3f\n", PIB2);
+        printf("Área: %.2f km²\n", Area2);
+        printf("PIB: %.2f bilhões de reais\n", PIB2);
         printf("Número de POntos Turísticos: %d\n", NumeroDePontosTuristicos2);
+        float DensidadePopulacional2 = Populacao2 / Area2;
+        printf("Densidade Populacional: %.2f hab/km²\n", DensidadePopulacional2);
 
-        
+ 
     return 0;
 }
