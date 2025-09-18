@@ -9,7 +9,7 @@ int main() {
     char Estado1[2];
     char CodigoDaCarta1[4], NomeDaCidade1[50];
     unsigned long int Populacao1; 
-    unsigned int NumeroDePontosTuristicos1;
+    int NumeroDePontosTuristicos1;
     float Area1, PIB1;
  
     // Declaração das variáveis da Carta 2
@@ -111,22 +111,24 @@ int main() {
         printf("Super Poder: %.2f\n", SuperPoder2);
 
         //Comparação dos Atributos das Cartas
-        printf("\n---Comparação dos Atributos das Cartas---\n")
+        printf("\n---Comparação dos Atributos das Cartas---\n");
+
         if (Populacao1 > Populacao2){
-        printf("\nPopulação: A Carta 1 Venceu!\n");
-    }       else{
-            printf("\nPopulação: A Carta 2 Venceu!\n");}
+        printf("\nPopulação:\n Carta 1: %lu\n Carta 2: %lu\n A Carta 1 Venceu!\n", Populacao1, Populacao2);
+        }       else{
+            printf("\nPopulação:\n Carta 1: %lu\n Carta 2: %lu\n A Carta 2 Venceu!\n", Populacao1, Populacao2);
+        }
         
         if (Area1 > Area2){
-            printf("Área: A Carta 1 Venceu!\n");
+            printf("\nÁrea:\n Carta 1: %.2f\n Carta 2: %.2f\n A Carta 1 Venceu!\n", Area1, Area2);
         }    else{
-            printf("Área: A Carta 2 Venceu!\n");
+            printf("\nÁrea:\n Carta 1: %.2f\n Carta 2: %.2f\n A Carta 2 Venceu!\n", Area1, Area2);
         }
 
         if (PIB1 > PIB2){
-        printf("\nPIB:\n Carta 1:A Carta 1 Venceu!\n");
+        printf("\nPIB:\n Carta 1: %.2f\n Carta 2: %.2f\n A Carta 1 Venceu!\n", PIB1, PIB2);
         }   else{
-            printf("PIB: A Carta 2 Venceu!\n");
+            printf("PIB:\n Carta 1: %.2f\n Carta 2: %.2f\n A Carta 2 Venceu!\n", PIB1, PIB2);
         }
 
         if (NumeroDePontosTuristicos1 > NumeroDePontosTuristicos2){
